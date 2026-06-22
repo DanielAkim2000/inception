@@ -1,0 +1,26 @@
+# Secrets — jamais sur git
+secrets/
+
+# Variables d'environnement
+srcs/.env
+
+# Data volumes
+data/
+
+# Docker
+srcs/.dockerignore
+
+# OS
+.DS_Store
+*.swp
+*~
+# Fichiers système du home
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.viminfo
+.lesshst
+.sudo_as_admin_successful
+.docker/
+.ssh/
