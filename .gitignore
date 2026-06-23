@@ -24,3 +24,11 @@ srcs/.dockerignore
 .sudo_as_admin_successful
 .docker/
 .ssh/
+.ICEauthority
+.Xauthority
+.cache/
+.config/
+.dmrc
+.mozilla/
+.xsession-errors
+.xsession-errors.old

@@ -126,3 +126,20 @@ Full rebuild from scratch:
 ```bash
 make re
 ```
+
+## Bonus services
+
+### Adminer
+Built from `srcs/requirements/bonus/`. PHP-FPM serving adminer.php, proxied by NGINX on port 8080.
+
+### Static website
+Built from `srcs/requirements/static/`. Simple NGINX serving a static HTML page, proxied on port 8081.
+
+### Redis cache
+Built from `srcs/requirements/redis/`. Redis server configured without protected mode, connected to WordPress via the redis-cache plugin.
+
+### FTP server
+Built from `srcs/requirements/ftp/`. vsftpd configured with passive mode (ports 21000-21010), pointing to the WordPress volume. Credentials: user `ftpuser`, password from `FTP_PASSWORD` env variable.
+
+### Netdata
+Built from `srcs/requirements/netdata/`. Real-time monitoring dashboard accessible on port 19999. Mounts `/proc`, `/sys` and `/var/run/docker.sock` from the host for full system and container metrics.

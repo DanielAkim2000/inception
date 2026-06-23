@@ -39,5 +39,12 @@ if [ ! -f /var/www/html/wp-config.php ]; then
 
 fi
 
+# permet d installer et configuer Redis cache
+
+wp plugin install redis-cache --activate --path=/var/www/html --allow-root
+wp config set WP_REDIS_HOST redis --path=/var/www/html --allow-root
+wp config set WP_REDIS_PORT 6379 --path=/var/www/html --allow-root
+wp redis enable --path=/var/www/html --allow-root
+
 # Lance PHP-FPM en foreground (PID 1)
 exec php-fpm8.2 -F

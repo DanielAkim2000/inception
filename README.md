@@ -58,3 +58,11 @@ Access the site at `https://demane.42.fr` (accept the self-signed certificate wa
 ### AI usage
 
 AI was used in this project to assist with debugging shell scripts (init.sh, wp-setup.sh), understanding Docker networking concepts, and generating configuration file templates. All generated content was reviewed, tested, and adapted to fit the specific constraints of the project.
+
+## Bonus services
+
+- **Adminer** — database management UI accessible at `https://demane.42.fr:8080`
+- **Static website** — portfolio page accessible at `http://demane.42.fr:8081`
+- **Redis cache** — object cache for WordPress, improves performance
+- **FTP server** — vsftpd pointing to the WordPress volume, accessible on port 21
+- **Netdata** — real-time system and container monitoring at `http://demane.42.fr:19999`
