@@ -62,7 +62,7 @@ AI was used in this project to assist with debugging shell scripts (init.sh, wp-
 ## Bonus services
 
 - **Adminer** — database management UI accessible at `https://demane.42.fr:8080`
-- **Static website** — portfolio page accessible at `http://demane.42.fr:8081`
+- **Static website** — portfolio page accessible at `https://demane.42.fr:8081`
 - **Redis cache** — object cache for WordPress, improves performance
 - **FTP server** — vsftpd pointing to the WordPress volume, accessible on port 21
 - **Netdata** — real-time system and container monitoring at `http://demane.42.fr:19999`

@@ -67,6 +67,6 @@ docker logs mariadb
 | Service | URL | Description |
 |---------|-----|-------------|
 | Adminer | https://demane.42.fr:8080 | Database management |
-| Static site | http://demane.42.fr:8081 | Portfolio page |
+| Static site | https://demane.42.fr:8081 | Portfolio page |
 | Netdata | http://demane.42.fr:19999 | System monitoring |
 | FTP | ftp://demane.42.fr:21 | File access (user: ftpuser) |

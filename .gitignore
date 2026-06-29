@@ -32,3 +32,4 @@ srcs/.dockerignore
 .mozilla/
 .xsession-errors
 .xsession-errors.old
+.env_copy
