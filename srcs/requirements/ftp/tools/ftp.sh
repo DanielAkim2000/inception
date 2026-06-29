@@ -16,7 +16,7 @@ fi
 # permet d avoir acces au volume WordPress
 
 chown -R ftpuser:ftpuser /var/www/html
-chown -R 755 /var/www/html
+chmod -R 755 /var/www/html
 
 # creer le dossier empty requis par vsftpd
 mkdir -p /var/run/vsftpd/empty
